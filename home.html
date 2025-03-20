@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+  <link rel="stylesheet" href=main-style.css>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="videoModal" class="modal is-active">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <div class="box has-text-centered">
+        <video id="popupVideo" controls autoplay style="max-width: 100%;">
+          <source src="videos/intro.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div class="container has-text-centered">
+
+    <div class="column is-narrow">
+      <a href="home.html">
+        <img src="images/logo.png" alt="NaijaHerbivoreHeaven Logo" style="max-height: 80px;">
+      </a>
+    </div>
+
+    <h1 class="is-size-3 has-text-weight-bold has-text-success">NaijaHerbivoreHeaven</h1>
+  
+    <nav class="nav-links">
+      <a href="home.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About Us</a>
+      <a href="credits.html">Reference Page</a>
+    </nav>
+  </div>
+
+      <section style="text-align: center;">
+        <img src="images/farm.jpg" alt="Farm" style="width: 100%; max-height: 300px; object-fit: cover;">
+      </section>
+
+      <section id="welcome" class="section has-text-centered" style="padding: 5rem 1rem;">
+        <h3 class="is-size-1 is-italic" style="font-weight: bold; color: #008000;">Welcome to NaijaHerbivore Heaven!!!</h3>
+        <p class="is-size-5" style="margin-top: 1rem;">
+          At NaijaHerbivoreH, we focus on fresh, locally sourced ingredients while staying true to the bold flavors of Nigerian cuisine. 
+          Our farm-to-table approach ensures that every dish we serve supports local farmers, celebrates community, and embodies the spirit of sustainability.
+        </p>
+      </section>
+
+      <section id="what-we-do" class="section has-light-grey-bg">
+        <div class="container">
+          <h1 class="is-size-1 is-size-3-mobile has-text-centered" style="margin-bottom: 2rem;">Our Farm-to-Table Approach</h1>
+          <div class="columns is-vcentered">
+            <div class="column is-one-third has-text-centered" data-aos="fade-down">
+              <img src="images/local farms stock.jpg" alt="Farm Produce" 
+                   style="max-width: 100%; border-radius: 12px; margin-bottom: 300px;">
+            </div>
+            <div class="column is-one-third" data-aos="fade-down">
+              <p class="is-size-5">
+                <strong>1. Partnering with Local Farms:</strong> We work with Houston-area farms and urban gardens to source fresh vegetables, greens, and herbs, ensuring dishes like 
+                <em>efo riro</em> (spinach stew) and yam porridge are made with the freshest ingredients. <br><br>
+                <strong>2. Emphasizing Traditional Ingredients:</strong> For spices and ingredients not locally available, we collaborate with African importers in Houston to maintain 
+                authentic flavors while supporting local businesses.<br><br>
+                <strong>3. Building Community Partnerships:</strong> By teaming up with local organizations focused on food sustainability, we promote food sovereignty and seasonal dishes that inspire the community.<br><br>
+                <strong>4. Creative Vegetarian Dishes:</strong> From vegetarian <em>jollof rice</em> to <em>moi moi</em> (steamed bean pudding), we combine bold Nigerian flavors with a modern, plant-based twist.
+              </p>
+            </div>
+            <div class="column is-one-third has-text-centered" data-aos="fade-down">
+              <img src="images/egusi.webp" alt="Vegetarian Dishes" 
+                   style="max-width: 100%; border-radius: 12px;">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="section" style="background-color: #f5f5f5; padding: 2rem;">
+        <div class="container has-text-centered">
+          <h2 class="is-size-2">Customer Reviews</h2>
+          <div class="reviews-container" style="overflow: hidden; width: 100%; position: relative; display: flex; justify-content: center;">
+            <div class="reviews" id="review-list" style="display: flex; white-space: nowrap; transition: transform 1s ease-in-out;">
+              <div class="review" style="min-width: 100%; padding: 1rem;"> <strong>Fenado Ulysses Reyes-Benjivar</strong> - "it's good." ⭐⭐⭐⭐⭐</div>
+              <div class="review" style="min-width: 100%; padding: 1rem;"> <strong>Raul Alejandro</strong> - "the food was amazing. The server was very welcoming." ⭐⭐⭐⭐⭐</div>
+              <div class="review" style="min-width: 100%; padding: 1rem;"> <strong>David G. Johnson</strong> - "the waitress cute" ⭐⭐⭐⭐⭐</div>
+              <div class="review" style="min-width: 100%; padding: 1rem;"> <strong>bluezipper200</strong> - "it felt like home" ⭐⭐⭐⭐⭐</div>
+              <div class="review" style="min-width: 100%; padding: 1rem;"> <strong>Dylan Dejean</strong> - "This fine establishment is everything that a restaurant should be..." ⭐⭐⭐⭐⭐</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer" class="section" style="background-color: #008000; color: #FFFFFF;">
+        <div class="container">
+          <div class="columns">
+            <div class="column">
+              <h6 style="color: #FFFFFF;">Main Links</h6>
+              <ul class="footer-links">
+                <li><a href="home.html" style="color: #FFFFFF;">Home</a></li>
+                <li><a href="menu.html" style="color: #FFFFFF;">Menu</a></li>
+                <li><a href="about.html" style="color: #FFFFFF;">About Us</a></li>
+                <li><a href="credits.html" style="color: #FFFFFF;">Reference Page</a></li>
+              </ul>
+            </div>
+            <div class="column">
+              <br>
+              <ul>
+                <li style="color: #FFFFFF;">Phone Number - 832-484-7080</li>
+                <li style="color: #FFFFFF;">Address - 3706 S Gessner Rd, Houston, TX 77063</li>
+                <li style="color: #FFFFFF;">Email: NaijaHerbivoreH@gmail.com</li>
+              </ul>
+            </div>
+          </div>
+          <hr style="border-color: #FFFFFF;">
+        </div>
+      </section>
+  </div>
+  
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+      document.addEventListener("DOMContentLoaded", function () {
+        const reviewList = document.getElementById("review-list");
+        let index = 0;
+        function scrollReviews() {
+          index++;
+          if (index >= reviewList.children.length) {
+            index = 0;
+          }
+          reviewList.style.transform = `translateX(-${index * 100}%)`;
+        }
+        setInterval(scrollReviews, 3000);
+      });
+    </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const videoModal = document.getElementById("videoModal");
+    const closeButton = document.querySelector(".modal-close");
+    const modalBackground = document.querySelector(".modal-background");
+    const video = document.getElementById("popupVideo");
+
+    function closeModal() {
+      videoModal.classList.remove("is-active"); 
+      video.pause(); 
+    }
+
+    closeButton.addEventListener("click", closeModal);
+    modalBackground.addEventListener("click", closeModal);
+  });
+</script>
+
+
+  </body>
+</body>
+</html>

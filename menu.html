@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="main-style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
+    <style>
+
+    </style>
+</head>
+<body>
+  <section id="hero" class="hero is-medium">
+    <section style="background-color:hsl(0, 0%, 100%); padding: 20px 0;">
+      <div class="container">
+        <div class="columns is-vcentered">
+          
+
+          <div class="column is-narrow">
+            <a href="home.html">
+              <img src="images/logo.png" alt="NaijaHerbivoreHeaven Logo" style="max-height: 80px;">
+            </a>
+          </div>
+          
+          <div class="container has-text-centered">
+
+            <h1 class="is-size-3 has-text-weight-bold has-text-success">NaijaHerbivoreHeaven</h1>
+            <nav class="nav-links">
+              <a href="home.html">Home</a>
+              <a href="menu.html">Menu</a>
+              <a href="about.html">About Us</a>
+              <a href="credits.html">Reference Page</a>
+            </nav>
+          </div>
+          
+  </section>
+        <section id="menu" class="section">
+            <div class="container">
+                <h2 class="title is-2 has-text-centered">Menu</h2>
+
+                <!-- Drinks -->
+                <div class="columns is-vcentered">
+                    <div class="column is-half">
+                        <h3 class="title is-3">Drinks</h3>
+                        <ul>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Malt - $3</span></li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Glass Bottled Fanta - $2</span></li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Selection of Soft Drinks - $2</span></li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Fruit Smoothies - $3</span></li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Zobo (Hibiscus Juice) - $3</span></li>
+                        </ul>
+                    </div>
+                    <div class="column is-half has-text-centered">
+                        <img src="images/realzobo.webp" alt="Drinks" class="menu-image">
+                    </div>
+                </div>
+
+                <!-- Apps -->
+                <div class="columns is-vcentered">
+                    <div class="column is-half">
+                        <h3 class="title is-3">Apps</h3>
+                        <ul>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Peppered Vegetable Suya - $8</span>
+                              <p class="menu-description">Grilled skewers of marinated vegetables, spiced with traditional Nigerian suya seasoning.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Akara (Spicy Bean Cakes) - $9</span>
+                              <p class="menu-description">Crispy fritters made from black-eyed peas, seasoned with herbs and spices, served with a tangy dipping sauce.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Plantain Chips - $5</span>
+                              <p class="menu-description">Thinly sliced and fried plantains, lightly salted and served with a zesty avocado dip.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Moin Moin - $8</span>
+                              <p class="menu-description">Spiced steamed bean pudding with the option of a bdoiled egg inside. </p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Scotch Egg - $5</span>
+                                <p class="menu-description">Deep-fried hard-boiled eggs wrapped in Impossible sausage meat and coated in breadcrumbs. (3 pcs)</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Samosa - $7</span>
+                                <p class="menu-description">Fried triangular pastry filled with spiced potatoes, onions, and peas. (4 pcs)</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Spring Rolls - $7</span>
+                                <p class="menu-description">Lightly fried roll filled with chopped and spiced vegetables.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column is-half has-text-centered">
+                        <img src="images/plantain.jpg" alt="Apps" class="menu-image">
+                    </div>
+                </div>
+
+                <!-- Mains -->
+                <div class="columns is-vcentered">
+                    <div class="column is-half">
+                        <h3 class="title is-3">Mains</h3>
+                        <ul>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Egusi Soup - $23</span>
+                              <p class="menu-description">Rich melon seed soup cooked with spinach and spices, served with your choice.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Efo Riro - $23</span>
+                              <p class="menu-description">Nigerian spiced spinach stew served with your choice of fufu.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Jollof Rice - $19</span>
+                              <p class="menu-description">Flavorful rice cooked in a spicy tomato sauce, accompanied by seasonal vegetables and plant-based proteins.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Vegetable Banga Rice - $19</span>
+                              <p class="menu-description">Fragrant rice cooked in palm nut sauce with assorted vegetables and spices, a hearty satisfying dish.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Yam and "Egg" - $17</span>
+                              <p class="menu-description">Eggs or Tofu scrambled with tomatoes, peppers, and onions with the choice of either boiled or fried yam.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Beans and Plantain - $15</span>
+                              <p class="menu-description">Beans cooked in a thick spicy broth topped with sweet ripe plantains.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Okro Soup - $23</span>
+                              <p class="menu-description">Chopped okra cooked in a well seasoned stew with grilled tofu and mushrooms served with your choice of fufu.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Red Stew - $19</span>
+                              <p class="menu-description">Ripe roma tomatoes, red bell peppers, onions and traditional spices blended together and cooked with grilled tofu and mushrooms served with white rice and a side of fried plantain.</p>
+                            </li>
+                            <li><span class="menu-item" onclick="toggleDescription(this)">Tofu Pepper Soup - $17</span>
+                              <p class="menu-description">Organic Tofu cooked in a fragrant soup. Served with your choice of boiled unripe plantain or boiled white rice.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column is-half has-text-centered">
+                        <img src="images/efo rio.webp" alt="Mains" class="menu-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            function toggleDescription(item) {
+                let description = item.nextElementSibling;
+                if (description) {
+                    description.style.display = description.style.display === "block" ? "none" : "block";
+                }
+            }
+        </script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+    </div>
+</body>
+</html>
